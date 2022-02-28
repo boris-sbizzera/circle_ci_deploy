@@ -5,7 +5,11 @@ jobs:
     macos:
       xcode: 12.5.1
     steps:
-      - run : echo "Hello mac" 
+      - flutter/install_sdk_and_pub:
+        version: 2.2.3
+      - run:
+          command: flutter build ios
+          working_directory: ios
 
 workflows:
   version: 2
