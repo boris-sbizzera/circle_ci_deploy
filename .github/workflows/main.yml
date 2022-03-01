@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - ios
+      - ios_preprod
       
 name: "Build & Release"
 jobs:
