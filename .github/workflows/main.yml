@@ -2,6 +2,9 @@ on:
   push:
     branches:
       - ios_preprod
+  pull_request:
+    branches:
+      - ios_preprod
       
 name: "Build & Release"
 jobs:
