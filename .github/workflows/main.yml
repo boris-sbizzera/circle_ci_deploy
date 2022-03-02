@@ -12,12 +12,14 @@ jobs:
     name: Testing Actions
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - run: echo "Hello"
-      uses: actions/upload-artifact@v2
-      - with:
-        - name: artefact
-        - path: lib/main.dart 
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v2
+        with:
+          name: homework
+          path: math-homework.txt
 
 # on:
 #   push:
