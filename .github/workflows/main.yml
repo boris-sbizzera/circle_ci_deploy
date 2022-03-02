@@ -12,8 +12,8 @@ jobs:
     name: Testing Actions
     runs-on: macos-latest
     steps:
-      - name: Upload main
       - uses: actions/checkout@v2
+      - name: Upload main
       # - uses: actions/upload-artifact@v2
       #   with:
       #     name: lib
