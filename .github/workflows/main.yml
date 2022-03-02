@@ -1,4 +1,10 @@
-on: [push]
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
       
 name: "Testing actions"
 jobs:
